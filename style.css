@@ -1,13 +1,16 @@
 body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+   margin: 0;
+    font-family: "Inter", Arial, sans-serif;
     background: #0b0b0b;
     color: #ffffff;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
 }
 
 
 header {
-    padding: 80px 10%;
+    padding: 100px 10% 80px;
     text-align: center;
 }
 
@@ -27,35 +30,93 @@ h1 {
 
 
 h2 {
-    font-weight: normal;
-    color: #cccccc;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    color: #ffffff;
+    margin-bottom: 20px;
 }
 
 
 section {
-    padding: 50px 10%;
+    padding: 70px 10%;
     max-width: 1000px;
     margin: auto;
+    border-top: 1px solid #222;
 }
 
+h3 {
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+    color: #ffffff;
+}
 
 .card {
-    margin: 25px 0;
-    padding: 25px;
-    border: 1px solid #333;
+    margin: 30px 0;
+    padding: 32px;
+    background: #121212;
+    border: 1px solid #2b2b2b;
+    border-radius: 12px;
+    transition: all 0.2s ease;
 }
 
 
+.card:hover {
+    border-color: #555;
+    transform: translateY(-2px);
+}
+
 footer {
-    padding: 40px;
+    padding: 80px 10%;
     text-align: center;
     color: #888;
+    border-top: 1px solid #222;
+}
+
+footer h2 {
+    margin-bottom: 20px;
+}
+
+footer p {
+    margin: 12px 0;
 }
 
 
 header p {
-    margin-top: 35px;
-    font-size: 18px;
-    letter-spacing: 3px;
+    margin-top: 30px;
+    font-size: 17px;
+    letter-spacing: 2px;
     color: #aaaaaa;
+    font-weight: 400;
+}
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 60px 6%;
+    }
+
+    .logo {
+        width: 260px;
+        max-width: 90%;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    section {
+        padding: 45px 6%;
+    }
+
+    .card {
+        padding: 24px;
+    }
+
+    footer {
+        padding: 60px 6%;
+    }
+
 }
